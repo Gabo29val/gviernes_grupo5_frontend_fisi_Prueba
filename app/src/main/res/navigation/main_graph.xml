@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/searchedProductsFragment">
+    <fragment
+        android:id="@+id/searchedProductsFragment"
+        android:name="com.example.dsm_appcliente.searchModule.SearchedProductsFragment"
+        android:label="fragment_searched_products"
+        tools:layout="@layout/fragment_searched_products" />
+</navigation>
