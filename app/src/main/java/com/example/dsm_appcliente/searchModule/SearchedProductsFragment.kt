@@ -5,13 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.fragment.findNavController
 import com.example.dsm_appcliente.R
 import com.example.dsm_appcliente.databinding.FragmentSearchedProductsBinding
 import com.example.dsm_appcliente.model.Product
 import com.example.dsm_appcliente.searchModule.adapter.ProductAdapter
 
 
-class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products) {
+class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products),
+    ProductAdapter.OnProductClickListener {
     private lateinit var mBinding: FragmentSearchedProductsBinding
     private lateinit var mProductAdapter: ProductAdapter
 
@@ -19,7 +22,7 @@ class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products) {
         super.onViewCreated(view, savedInstanceState)
         mBinding = FragmentSearchedProductsBinding.bind(view)
 
-        mProductAdapter = ProductAdapter(getProducts())
+        mProductAdapter = ProductAdapter(getProducts(), this)
 
 
         mBinding.rvProducts.apply {
@@ -31,7 +34,7 @@ class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products) {
     private fun getProducts(): List<Product> {
         return listOf(
             Product(
-                name = "Red label",
+                name = "Red label 1",
                 photoUrl = "https://www.blogdelfotografo.com/wp-content/uploads/2020/12/producto_fondo_negro.webp",
                 nameStore = "Tottus",
                 price = 99.99,
@@ -44,7 +47,7 @@ class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products) {
                 )
             ),
             Product(
-                name = "Red label",
+                name = "Red label 2",
                 photoUrl = "https://www.blogdelfotografo.com/wp-content/uploads/2020/12/producto_fondo_negro.webp",
                 nameStore = "Tottus",
                 price = 99.99,
@@ -57,7 +60,7 @@ class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products) {
                 )
             ),
             Product(
-                name = "Red label",
+                name = "Red label 3",
                 photoUrl = "https://www.blogdelfotografo.com/wp-content/uploads/2020/12/producto_fondo_negro.webp",
                 nameStore = "Tottus",
                 price = 99.99,
@@ -70,7 +73,7 @@ class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products) {
                 )
             ),
             Product(
-                name = "Red label",
+                name = "Red label 4",
                 photoUrl = "https://www.blogdelfotografo.com/wp-content/uploads/2020/12/producto_fondo_negro.webp",
                 nameStore = "Tottus",
                 price = 99.99,
@@ -83,5 +86,17 @@ class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products) {
                 )
             ),
         )
+    }
+
+    override fun onProductClick(product: Product) {
+
+        val action = SearchedProductsFragmentDirections
+            .actionSearchedProductsFragmentToProductDetailsFragment(
+                product.name,
+                product.description,
+                product.photoUrl
+            )
+
+        findNavController().navigate(action)
     }
 }

@@ -11,7 +11,7 @@ import com.example.dsm_appcliente.R
 import com.example.dsm_appcliente.databinding.ItemProductCardAltBinding
 import com.example.dsm_appcliente.model.Product
 
-class ProductAdapter(val products: List<Product>) :
+class ProductAdapter(val products: List<Product>, val itemClickListener: OnProductClickListener) :
     RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
     inner class ProductViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val binding = ItemProductCardAltBinding.bind(view)
@@ -27,7 +27,7 @@ class ProductAdapter(val products: List<Product>) :
                     .into(imgPhotoProduct)
 
                 root.setOnClickListener {
-                    Toast.makeText(binding.root.context, "Producto!", Toast.LENGTH_SHORT).show()
+                    itemClickListener.onProductClick(product)
                 }
             }
         }

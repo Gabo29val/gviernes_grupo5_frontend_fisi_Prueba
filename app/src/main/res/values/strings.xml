@@ -12,4 +12,7 @@
     <string name="description_img">Imagen del producto</string>
     <string name="specifications_tools">Nombre esp - texto\nNombre esp - texto\nNombre esp - texto</string>
     <string name="label_tienda">Tienda</string>
+    <string name="_1">1</string>
+    <string name="description_btn_remove">boton para reducir cantidad</string>
+    <string name="description_btn_add">Boton para añadir</string>
 </resources>

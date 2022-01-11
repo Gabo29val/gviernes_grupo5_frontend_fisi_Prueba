@@ -8,5 +8,24 @@
         android:id="@+id/searchedProductsFragment"
         android:name="com.example.dsm_appcliente.searchModule.SearchedProductsFragment"
         android:label="fragment_searched_products"
-        tools:layout="@layout/fragment_searched_products" />
+        tools:layout="@layout/fragment_searched_products" >
+        <action
+            android:id="@+id/action_searchedProductsFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.example.dsm_appcliente.searchModule.ProductDetailsFragment"
+        android:label="fragment_product_details"
+        tools:layout="@layout/fragment_product_details" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="photoUrl"
+            app:argType="string" />
+    </fragment>
 </navigation>
