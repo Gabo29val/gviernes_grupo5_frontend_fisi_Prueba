@@ -36,7 +36,7 @@ class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products),
                 nameStore = "Tottus",
                 price = 99.99,
                 description = "Dentro de los licores encontramos al Whisky, una bebida alcohólica a base de malta fermentada de cereales como cebada, trigo, centeno y maíz, que se destila y añeja en barriles de madera tradicionalmente de roble blanco. Este último proceso dura por lo menos tres años para que adquiera el color caramelo que lo caracteriza. El Wisky tiene sus orígenes en Irlanda y Escocia y en la actualidad se disfruta en muchos países a nivel mundial.",
-                specifications = mapOf(
+                specifications = mutableListOf(
                     Pair("Presentación", "Botella"),
                     Pair("Composición", "Grano y malta"),
                     Pair("Proceso de añejamiento", "No declarada"),
@@ -49,7 +49,7 @@ class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products),
                 nameStore = "Tottus",
                 price = 99.99,
                 description = "Dentro de los licores encontramos al Whisky, una bebida alcohólica a base de malta fermentada de cereales como cebada, trigo, centeno y maíz, que se destila y añeja en barriles de madera tradicionalmente de roble blanco. Este último proceso dura por lo menos tres años para que adquiera el color caramelo que lo caracteriza. El Wisky tiene sus orígenes en Irlanda y Escocia y en la actualidad se disfruta en muchos países a nivel mundial.",
-                specifications = mapOf(
+                specifications = mutableListOf(
                     Pair("Presentación", "Botella"),
                     Pair("Composición", "Grano y malta"),
                     Pair("Proceso de añejamiento", "No declarada"),
@@ -62,7 +62,7 @@ class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products),
                 nameStore = "Tottus",
                 price = 99.99,
                 description = "Dentro de los licores encontramos al Whisky, una bebida alcohólica a base de malta fermentada de cereales como cebada, trigo, centeno y maíz, que se destila y añeja en barriles de madera tradicionalmente de roble blanco. Este último proceso dura por lo menos tres años para que adquiera el color caramelo que lo caracteriza. El Wisky tiene sus orígenes en Irlanda y Escocia y en la actualidad se disfruta en muchos países a nivel mundial.",
-                specifications = mapOf(
+                specifications = mutableListOf(
                     Pair("Presentación", "Botella"),
                     Pair("Composición", "Grano y malta"),
                     Pair("Proceso de añejamiento", "No declarada"),
@@ -75,7 +75,7 @@ class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products),
                 nameStore = "Tottus",
                 price = 99.99,
                 description = "Dentro de los licores encontramos al Whisky, una bebida alcohólica a base de malta fermentada de cereales como cebada, trigo, centeno y maíz, que se destila y añeja en barriles de madera tradicionalmente de roble blanco. Este último proceso dura por lo menos tres años para que adquiera el color caramelo que lo caracteriza. El Wisky tiene sus orígenes en Irlanda y Escocia y en la actualidad se disfruta en muchos países a nivel mundial.",
-                specifications = mapOf(
+                specifications = mutableListOf(
                     Pair("Presentación", "Botella"),
                     Pair("Composición", "Grano y malta"),
                     Pair("Proceso de añejamiento", "No declarada"),
@@ -88,11 +88,7 @@ class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products),
     override fun onProductClick(product: Product) {
 
         val action = SearchedProductsFragmentDirections
-            .actionSearchedProductsFragmentToProductDetailsFragment(
-                product.name,
-                product.description,
-                product.photoUrl
-            )
+            .actionSearchedProductsFragmentToProductDetailsFragment(product)
 
         findNavController().navigate(action)
     }

@@ -1,5 +1,7 @@
 package com.example.dsm_appcliente.model
 
+import java.io.Serializable
+
 data class Product(
     val id: Long = 0,
     val name: String = "",
@@ -7,5 +9,5 @@ data class Product(
     val price: Double = 0.0,
     val photoUrl: String = "",
     val description: String = "",
-    val specifications: Map<String, String>
-)
+    val specifications: MutableList<Pair<String, String>>
+): Serializable

@@ -8,6 +8,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.dsm_appcliente.R
 import com.example.dsm_appcliente.databinding.FragmentProductDetailsBinding
+import com.example.dsm_appcliente.searchModule.productDetails.adapter.SpecificationProductAdapter
 
 class ProductDetailsFragment : Fragment(R.layout.fragment_product_details) {
 
@@ -23,13 +24,24 @@ class ProductDetailsFragment : Fragment(R.layout.fragment_product_details) {
 
     private fun setupData() {
         mBinding.apply {
-            tvNameProduct.text = arg.name
-            details.tvDescription.text = arg.description
+            tvNameProduct.text = arg.product.name
+            details.tvDescription.text = arg.product.description
+            details.tvNameStore.text = arg.product.nameStore
             Glide.with(root)
-                .load(arg.photoUrl)
+                .load(arg.product.photoUrl)
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .centerCrop()
                 .into(imgPhotoProduct)
+        }
+
+        setupAdapterSpecification()
+    }
+
+    private fun setupAdapterSpecification() {
+        val adaptador = SpecificationProductAdapter(arg.product.specifications)
+        mBinding.details.rvSpecifications.apply {
+            adapter = adaptador
+            setHasFixedSize(true)
         }
     }
 }

@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/common_padding_middle">
 
     <ImageButton
         android:id="@+id/btn_add"
@@ -49,6 +50,7 @@
         android:layout_marginTop="@dimen/common_padding_default"
         android:text="@string/tv_descripción"
         android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textColor="@color/primaryColor"
         app:layout_constraintStart_toStartOf="@+id/btn_add"
         app:layout_constraintTop_toBottomOf="@+id/btn_add" />
 
@@ -72,18 +74,19 @@
         android:layout_marginTop="@dimen/common_padding_default"
         android:text="@string/tv_especificaciones"
         android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textColor="@color/primaryColor"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/tv_description" />
 
-    <TextView
-        android:id="@+id/tv_specifications"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_specifications"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/common_padding_min"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="@+id/tv_description"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/label_specification"
-        tools:text="@string/specifications_tools" />
+        tools:listitem="@layout/item_specification_product" />
 
     <TextView
         android:id="@+id/label_tienda"
@@ -92,14 +95,16 @@
         android:layout_marginTop="@dimen/common_padding_default"
         android:text="@string/label_tienda"
         android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textColor="@color/primaryColor"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/tv_specifications" />
+        app:layout_constraintTop_toBottomOf="@+id/rv_specifications" />
 
     <TextView
-        android:id="@+id/tv_name_tienda"
+        android:id="@+id/tv_name_store"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/common_padding_min"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
         app:layout_constraintEnd_toEndOf="@+id/tv_description"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/label_tienda"

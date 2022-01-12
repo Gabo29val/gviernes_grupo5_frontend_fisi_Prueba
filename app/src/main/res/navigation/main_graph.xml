@@ -19,13 +19,7 @@
         android:label="fragment_product_details"
         tools:layout="@layout/fragment_product_details" >
         <argument
-            android:name="name"
-            app:argType="string" />
-        <argument
-            android:name="description"
-            app:argType="string" />
-        <argument
-            android:name="photoUrl"
-            app:argType="string" />
+            android:name="product"
+            app:argType="com.example.dsm_appcliente.model.Product" />
     </fragment>
 </navigation>
