@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/searchedProductsFragment">
+    app:startDestination="@id/searchFragment">
     <fragment
         android:id="@+id/searchedProductsFragment"
         android:name="com.example.dsm_appcliente.searchModule.searchedProducts.SearchedProductsFragment"
@@ -21,5 +21,14 @@
         <argument
             android:name="product"
             app:argType="com.example.dsm_appcliente.model.Product" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.dsm_appcliente.searchModule.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_searchedProductsFragment"
+            app:destination="@id/searchedProductsFragment" />
     </fragment>
 </navigation>

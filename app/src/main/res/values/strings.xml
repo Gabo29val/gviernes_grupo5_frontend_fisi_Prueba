@@ -15,4 +15,6 @@
     <string name="_1">1</string>
     <string name="description_btn_remove">boton para reducir cantidad</string>
     <string name="description_btn_add">Boton para añadir</string>
+    <string name="txt_buscar">Buscar</string>
+    <string name="hint_search">Buscar en minimarket de barrio</string>
 </resources>
