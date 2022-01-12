@@ -1,16 +1,13 @@
-package com.example.dsm_appcliente.searchModule
+package com.example.dsm_appcliente.searchModule.searchedProducts
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.example.dsm_appcliente.R
 import com.example.dsm_appcliente.databinding.FragmentSearchedProductsBinding
 import com.example.dsm_appcliente.model.Product
-import com.example.dsm_appcliente.searchModule.adapter.ProductAdapter
+import com.example.dsm_appcliente.searchModule.searchedProducts.adapter.ProductAdapter
 
 
 class SearchedProductsFragment : Fragment(R.layout.fragment_searched_products),

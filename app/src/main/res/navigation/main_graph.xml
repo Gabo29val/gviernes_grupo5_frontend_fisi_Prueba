@@ -6,7 +6,7 @@
     app:startDestination="@id/searchedProductsFragment">
     <fragment
         android:id="@+id/searchedProductsFragment"
-        android:name="com.example.dsm_appcliente.searchModule.SearchedProductsFragment"
+        android:name="com.example.dsm_appcliente.searchModule.searchedProducts.SearchedProductsFragment"
         android:label="fragment_searched_products"
         tools:layout="@layout/fragment_searched_products" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/productDetailsFragment"
-        android:name="com.example.dsm_appcliente.searchModule.ProductDetailsFragment"
+        android:name="com.example.dsm_appcliente.searchModule.productDetails.ProductDetailsFragment"
         android:label="fragment_product_details"
         tools:layout="@layout/fragment_product_details" >
         <argument

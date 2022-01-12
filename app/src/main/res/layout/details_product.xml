@@ -5,19 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-
     <ImageButton
         android:id="@+id/btn_add"
         android:layout_width="@dimen/common_padding_long"
         android:layout_height="@dimen/common_padding_long"
         android:layout_marginStart="@dimen/common_padding_default"
-        android:layout_marginTop="@dimen/common_padding_default"
         android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/description_btn_add"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_add_circle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/description_btn_add"/>
+        app:tint="@color/primaryLightColor" />
 
     <TextView
         android:id="@+id/tv_cantidad"
@@ -36,11 +35,12 @@
         android:layout_height="@dimen/common_padding_long"
         android:layout_marginStart="@dimen/common_padding_min"
         android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/description_btn_remove"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_remove_circle"
         app:layout_constraintStart_toEndOf="@+id/tv_cantidad"
         app:layout_constraintTop_toTopOf="@+id/btn_add"
-        android:contentDescription="@string/description_btn_remove" />
+        app:tint="@color/primaryLightColor" />
 
     <TextView
         android:id="@+id/textView"

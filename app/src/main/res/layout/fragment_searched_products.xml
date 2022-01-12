@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".searchModule.SearchedProductsFragment">
+    tools:context=".searchModule.searchedProducts.SearchedProductsFragment">
 
     <LinearLayout
         android:id="@+id/layout_btn_container"
