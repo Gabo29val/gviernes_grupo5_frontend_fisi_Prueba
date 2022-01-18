@@ -22,10 +22,6 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         super.onViewCreated(view, savedInstanceState)
         mBinding = FragmentSearchBinding.bind(view)
 
-        mBinding.fabSearch.setOnClickListener {
-            findNavController().navigate(R.id.action_searchFragment_to_searchedProductsFragment)
-        }
-
         setupTabs()
     }
 

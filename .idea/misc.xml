@@ -5,13 +5,16 @@
       <map>
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/drawable-v24/btn_custom.xml" value="0.2703125" />
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/drawable-v24/ic_filter_list.xml" value="0.2703125" />
+        <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/drawable/background_searchview.xml" value="0.2703125" />
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/drawable/ic_search.xml" value="0.2703125" />
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/drawable/search_bar_background.xml" value="0.2703125" />
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/a.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/details_product.xml" value="0.264" />
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/fragment_categories.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/fragment_product_details.xml" value="0.2" />
+        <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/fragment_expandable_search.xml" value="0.264" />
+        <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/fragment_main_search.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/fragment_product_details.xml" value="0.264" />
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/fragment_product_details_2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/fragment_product_details_motionlayout_end.xml" value="0.264" />
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/fragment_product_details_motionlayout_star.xml" value="0.264" />
@@ -22,6 +25,7 @@
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/item_product_card_alt.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/item_specification_product.xml" value="0.264" />
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/layout/item_store.xml" value="0.4" />
+        <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/menu/menu_search.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Alvaro/AndroidStudioProjects/DSM_AppCliente/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
       </map>
     </option>
