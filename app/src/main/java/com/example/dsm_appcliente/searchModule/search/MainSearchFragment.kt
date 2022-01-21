@@ -33,9 +33,6 @@ class MainSearchFragment : Fragment(R.layout.fragment_main_search) {
     private fun setupSearchView() {
         val item = mBinding.toolbar.menu.findItem(R.id.action_search)
         val searchView: SearchView = item.actionView as SearchView
-        searchView.setOnSearchClickListener {
-            Toast.makeText(mBinding.root.context, "Ahhh", Toast.LENGTH_SHORT).show()
-        }
 
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {

@@ -11,19 +11,25 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <include layout="@layout/item_categority" />
+        <include
+            android:id="@+id/category_1"
+            layout="@layout/item_categority" />
     </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <include layout="@layout/item_categority" />
+        <include
+            android:id="@+id/category_2"
+            layout="@layout/item_categority" />
     </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <include layout="@layout/item_categority" />
+        <include
+            android:id="@+id/category_3"
+            layout="@layout/item_categority" />
     </FrameLayout>
 
 </LinearLayout>

@@ -19,15 +19,18 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/tv_name_category"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:text="Categoría"
+                android:layout_marginHorizontal="@dimen/common_padding_min"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
 
             <ImageView
+                android:id="@+id/img_photo_category"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
