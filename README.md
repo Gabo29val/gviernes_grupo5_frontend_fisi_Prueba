@@ -111,4 +111,4 @@ Esta rama contiene el proyecto principal del **frontend** de la aplicación "Min
     ![buy2](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/pago_2.PNG?alt=media&token=ae083af5-a918-4dda-8a08-b538b1afad18)
 
 
-![rama development](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/video.gif?alt=media&token=492c69ec-17b1-4c67-8181-69925cbd9d8a)
+![image](https://raw.githubusercontent.com/ZhengYaWei1992/ZWProgressView/master/Untitled3.gif)
