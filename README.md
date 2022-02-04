@@ -35,6 +35,8 @@ Esta rama contiene el proyecto principal del **frontend** de la aplicación "Min
 
 ### Guía de instalación
 
+    ![rama development](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/video.gif?alt=media&token=492c69ec-17b1-4c67-8181-69925cbd9d8a)
+
 *   Clonar el repositorio usando el comando:
 
         $ git clone https://github.com/Gabo29val/gviernes_grupo5_frontend_fisi.git   
