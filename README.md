@@ -75,9 +75,7 @@ Esta rama contiene el proyecto principal del **frontend** de la aplicación "Min
     Ingreso de productos a buscar y resultados de la búsqueda.
     
     ![busqueda1](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/busqueda1.PNG?alt=media&token=6127985b-a55f-48c9-b99b-27ae25f3fb84)
-    
     ![busqueda2](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/busqueda2.PNG?alt=media&token=9a588d57-dbcb-471e-9557-806e1109745b)
-    
     ![busqueda3](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/busqueda3.PNG?alt=media&token=3f9b5bc4-3ed6-4b51-ad32-e9d18f11b12c)
 
 *   Información del producto
