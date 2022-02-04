@@ -69,7 +69,7 @@ Esta rama contiene el proyecto principal del **frontend** de la aplicación "Min
 *   Pantalla inicial
 
     ![front inicial](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/front_1.PNG?alt=media&token=4ff0603a-90a0-4a87-b595-82d6bae852e3)
-
+---
 *   Búsqueda de productos
     
     Ingreso de productos a buscar y resultados de la búsqueda.
@@ -85,7 +85,7 @@ Esta rama contiene el proyecto principal del **frontend** de la aplicación "Min
     ![info1](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/info_prod_1.PNG?alt=media&token=1b00d37f-1670-4022-98e1-116426103b7f)
     
     ![info2](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/info_prod_2.PNG?alt=media&token=b927a6c7-2643-4b9f-a709-35c224930a8e)
-
+---
 *   Agregar al carrito
     
     ![add car1](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/add_carrito_1.PNG?alt=media&token=453a01a0-5982-4b45-885f-f80fc3ffa5a8)
