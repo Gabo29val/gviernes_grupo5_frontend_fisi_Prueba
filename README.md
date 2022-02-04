@@ -80,12 +80,12 @@ Esta rama contiene el proyecto principal del **frontend** de la aplicación "Min
 
 *   Información del producto
     
-    ![info1](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/info_prod_1.PNG?alt=media&token=1b00d37f-1670-4022-98e1-116426103b7f)   
+    ![info1](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/info_prod_1.PNG?alt=media&token=1b00d37f-1670-4022-98e1-116426103b7f)
     ![info2](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/info_prod_2.PNG?alt=media&token=b927a6c7-2643-4b9f-a709-35c224930a8e)
 
 *   Agregar al carrito
     
-    ![add car1](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/add_carrito_1.PNG?alt=media&token=453a01a0-5982-4b45-885f-f80fc3ffa5a8)   
+    ![add car1](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/add_carrito_1.PNG?alt=media&token=453a01a0-5982-4b45-885f-f80fc3ffa5a8)
     ![add car2](https://firebasestorage.googleapis.com/v0/b/minimarket-de-barrio.appspot.com/o/add_carrito_2.PNG?alt=media&token=d6906306-8533-44c4-bd98-cea7d2afdb61)
 
 *   Visualizar tiendas cercanas
